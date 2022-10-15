@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --grey-background: #222;
+  --whiteCol: #f4f4f4;
+  --greenCol: #44d62c;
+  --body-text: #999;
+  --font-weight-bold: 400;
+  --color-warning: #ffc107;
+}
+
+body {
+  background: var(--grey-background);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.75rem;
+  background-color: #000000;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 1px var(--greenCol);
+  user-select: none;
+}
+
+.logo {
+  width: 35px;
+  z-index: 10;
+}
+
+header .nav-list,
+header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+  list-style: none;
+}
+
+header .nav-links a {
+  text-decoration: none;
+  color: var(--body-text);
+}
+
+header .icons,
+span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5rem;
+  color: var(--body-text);
+}
+
+header .icons span {
+  cursor: pointer;
+}
+
+.nav-list a:hover,
+.nav-list span:hover {
+  color: var(--whiteCol);
+}
+
+#close--Btn,
+#search--Btn {
+  z-index: 10;
+}
+
+header .search-Box {
+  position: absolute;
+  display: flex;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  align-items: center;
+  padding: 0 30px;
+  right: -100;
+  transition: 500ms ease-in;
+}
+
+.search-Box input {
+  color: var(--whiteCol);
+  padding: 0 3.5%;
+  background: #222;
+  margin: 0 10%;
+  width: 100%;
+  font-size: 1em;
+  height: 3.74rem;
+  outline: none;
+  border: none;
+}
+
+header .search-Box {
+  display: none;
+}
+
+header .search-Box.active {
+  display: flex;
+  right: 0;
+}
+
+.plc-Search {
+  position: absolute;
+  margin-left: 10.5%;
+}
+
+#close--Btn,
+#search--Btn.active {
+  display: none;
+}
+
+#close--Btn.active {
+  display: flex;
+}
+
+/* Cart Box */
+.cart-Container ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--whiteCol);
+}
+.cart-Container.active {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--body-text);
+}
+
+/* ---------------------------------------------------------- */ ;
