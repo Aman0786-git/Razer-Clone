@@ -4,6 +4,7 @@ const closeBtn = document.querySelector("#close--Btn");
 const cartBtn = document.querySelector("#cart--Btn");
 const cartContainer = document.querySelector(".cartContainer");
 const bodyArea = document.querySelector("#body");
+const main = document.querySelector(".mainSection");
 
 const addActiveSearch = () => {
   searchBtn.classList.add("active");
@@ -16,10 +17,12 @@ const removeActiveSearch = () => {
   searchBtn.classList.remove("active");
   closeBtn.classList.remove("active");
   searchBox.classList.remove("active");
+  main.style = "z-index:1";
 };
 
 const removeCart = () => {
   cartContainer.classList.remove("active");
+  main.style = "z-index:1";
 };
 
 const removeActiveAll = () => {
@@ -38,14 +41,8 @@ cartBtn.addEventListener("click", () => {
   if (searchBox.classList.contains("active")) removeActiveSearch();
   if (cartContainer.classList.contains("active")) {
     removeCart();
-  } else cartContainer.classList.add("active");
+  } else {
+    main.style = "z-index:-10";
+    cartContainer.classList.add("active");
+  }
 });
-
-/* bodyArea.addEventListener("click", () => {
-  if (
-    searchBox.classList.contains("active") ||
-    cartContainer.classList.contains("active")
-  )
-    removeActiveAll();
-});
- */

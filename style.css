@@ -24,7 +24,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,7 +90,7 @@ header .search-Box {
   align-items: center;
   padding: 0 30px;
   right: -100;
-  transition: 500ms ease-in;
+  transition: right 500ms ease;
 }
 
 .search-Box input {
@@ -117,6 +117,7 @@ header .search-Box.active {
 .plc-Search {
   position: absolute;
   margin-left: 10.5%;
+  color: var(--body-text);
 }
 
 #close--Btn,
@@ -155,7 +156,7 @@ a {
 .arrow-cart {
   position: absolute;
   top: -1.1rem;
-  left: 13.2rem;
+  left: 13.7rem;
   font-size: 30px;
   color: var(--body-text);
   outline: #44d62c;
@@ -208,8 +209,106 @@ a {
   color: var(--whiteCol);
   text-align: center;
   /* border: 2px solid black; */
-  z-index: -2;
+  z-index: -5;
   font-weight: 400;
   padding: 0.7rem 0;
   background: #555;
+}
+
+/* ------------------------------------------- */
+.mainSection {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  position: relative;
+  user-select: none;
+  gap: 5px;
+}
+
+.content .heading h1 span {
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 3.5%;
+  left: 50%;
+  font-size: 3.5rem;
+  transform: translate(-50%, -50%);
+  padding-top: 1.3rem;
+}
+
+.content .heading p,
+.learnMore,
+.arrow {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding-top: 1.4rem;
+}
+
+.content .heading .learnMore,
+.arrow {
+  text-transform: capitalize;
+  top: 8%;
+  font-size: 1.3rem;
+}
+
+.content .heading .arrow {
+  margin-left: 3em;
+  color: var(--greenCol);
+}
+.learnMore:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*------- */
+.heading_two h1 span {
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  font-size: 3.5rem;
+  transform: translate(-50%, -50%);
+  padding-top: 1.3rem;
+}
+
+.heading_two p,
+.razerLM,
+.arrowLM,
+.reserve {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  padding-top: 1.4rem;
+}
+
+.razerLM,
+.reserve {
+  /* margin-right: 2%; */
+  top: 42%;
+  text-transform: capitalize;
+}
+
+.reserve {
+  text-align: center;
 }
