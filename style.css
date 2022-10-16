@@ -57,7 +57,7 @@ header .nav-links a {
 }
 
 header .icons,
-span {
+header .icons span {
   position: relative;
   display: flex;
   align-items: center;
@@ -138,7 +138,6 @@ a {
 .cartContainer.active {
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: center;
   position: absolute;
   max-width: 16rem;
@@ -177,17 +176,40 @@ a {
   border-top: 1px solid #555;
   display: flex;
   align-content: center;
-}
-.cart-items li a {
-  text-align: center;
+  font-size: 0.875rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.cart-items a:hover,
-.cart-items span:hover {
+.material-symbols-outlined {
+  color: #fff;
+  font-weight: 200;
+}
+
+.cart-items li a {
+  display: block;
+  text-align: center;
+  font-weight: 200;
+}
+.cart-items li :hover {
   color: var(--greenCol);
   cursor: pointer;
 }
+
 .cartContainer {
   display: none;
 }
-/* ---------------------------------------------------------- */
+
+/* -------------------------Header Ends--------------------------------- */
+
+/* Hero Section  */
+.notificationMsg {
+  position: relative;
+  top: 3.5rem;
+  color: var(--whiteCol);
+  text-align: center;
+  /* border: 2px solid black; */
+  z-index: -2;
+  font-weight: 400;
+  padding: 0.7rem 0;
+  background: #555;
+}

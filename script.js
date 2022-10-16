@@ -40,3 +40,12 @@ cartBtn.addEventListener("click", () => {
     removeCart();
   } else cartContainer.classList.add("active");
 });
+
+/* bodyArea.addEventListener("click", () => {
+  if (
+    searchBox.classList.contains("active") ||
+    cartContainer.classList.contains("active")
+  )
+    removeActiveAll();
+});
+ */
