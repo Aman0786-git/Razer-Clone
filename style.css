@@ -71,8 +71,8 @@ header .icons span {
   cursor: pointer;
 }
 
-.nav-list a:hover,
-.nav-list span:hover {
+.nav-list .nav-links a:hover,
+.nav-list .icons span:hover {
   color: var(--whiteCol);
 }
 
@@ -160,7 +160,6 @@ a {
   left: 13.7rem;
   font-size: 30px;
   color: var(--body-text);
-  outline: #44d62c;
 }
 
 .cart-message {
