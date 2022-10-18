@@ -24,6 +24,10 @@ body {
   font-weight: 400;
 }
 
+.mainSection,
+.imgLayout {
+  cursor: pointer;
+}
 header {
   position: absolute;
   top: 0;
@@ -291,8 +295,6 @@ a {
   top: 35.6%;
   left: 50%;
   font-size: 0.9rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   transform: translate(-50%, -50%);
   padding: 0.4rem 0.8rem;
@@ -304,10 +306,7 @@ a {
 
 .box span {
   font-weight: 700;
-  padding-right: 0.9rem;
   font-size: 0.7rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .heading_two h1 span,
 .heading_three h1 span {
@@ -340,7 +339,6 @@ a {
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
-  /* padding-top: 1.4rem; */
   margin-top: 1.4rem;
 }
 
@@ -361,6 +359,7 @@ a {
 .arrowLM,
 .arrowQT,
 .shopQT {
+  margin-top: 1.4rem;
   left: 42%;
 }
 
@@ -383,6 +382,14 @@ a {
 .arrowMW {
   margin-left: 5.1%;
 }
+
+.razerLM,
+.reserve,
+.arrowLM,
+.arrowRN {
+  margin-top: 2rem;
+}
+
 /* =------ -------------- ------- --------*/
 
 .heading_three h1 span {
@@ -470,12 +477,57 @@ a {
   position: relative;
   top: -100%;
   color: white;
-  margin: 0;
+  margin-top: 1.5rem;
   text-align: center;
+  /* padding: 0 4em; */
 }
 
 .leftImgHead h1 {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+}
+
+.leftImgHead p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.leftImgHead .leftLM {
+  font-size: 1.1rem;
+}
+.leftImgHead .leftLM:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.leftImgHead .leftAR {
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  color: var(--greenCol);
+}
+
+.leftImgHead .leftBuy {
+  margin-left: 1rem;
+}
+
+.leftImgHead .box p {
+  color: black;
+  background-color: #ff9c07;
+  position: relative;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  line-height: 1em;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftImgHead .box span {
+  font-weight: 700;
+  font-size: 0.7rem;
 }
