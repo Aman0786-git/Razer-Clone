@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -237,7 +237,7 @@ a {
 }
 
 .content .heading h1 span {
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   margin: 0;
@@ -311,7 +311,7 @@ a {
 }
 .heading_two h1 span,
 .heading_three h1 span {
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   margin: 0;
@@ -386,7 +386,7 @@ a {
 /* =------ -------------- ------- --------*/
 
 .heading_three h1 span {
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   margin: 0;
@@ -444,4 +444,38 @@ a {
 
 .arrowMW {
   margin-left: 12.7%;
+}
+
+/* ______________________GIMG LAYOUT__________________________ */
+.imgLayout {
+  margin-top: 5px;
+  position: absolute;
+  /* height: 100vh; */
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+}
+.column {
+  height: 90vh;
+}
+.column img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.leftImgHead {
+  position: relative;
+  top: -100%;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.leftImgHead h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
 }
